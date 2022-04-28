@@ -1,0 +1,31 @@
+{
+  "name": "bsctestnet-default-token-list",
+  "version": "1.0.6",
+  "description": "◦ The bsctestnet Dex default token list",
+  "main": "build/harmonydex-default.tokenlist.json",
+  "scripts": {
+    "test": "mocha",
+    "build": "rimraf build && mkdir -p build && node src/write.js > build/harmonydex-default.tokenlist.json",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "files": [
+    "build/harmonydex-default.tokenlist.json"
+  ],
+  "keywords": [
+    "uniswap",
+    "harmonydex",
+    "default",
+    "token",
+    "list"
+  ],
+  "author": "Moody Salem",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@ethersproject/address": "^5.0.2",
+    "@uniswap/token-lists": "^1.0.0-beta.8",
+    "ajv": "^6.12.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "rimraf": "^3.0.2"
+  }
+}
