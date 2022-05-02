@@ -13,7 +13,7 @@ module.exports = function buildList() {
       'patch': +parsed[ 2 ]
     },
     'tags': {},
-    'logoURI': 'https://s2.coinmarketcap.com/static/img/coins/64x64/14941.png',
+    'logoURI': 'https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png',
     'keywords': [
       'uniswap',
       'default'
